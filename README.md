@@ -25,7 +25,7 @@ To securely store your KeePassXC database password in Windows Credential Manager
    - In the Credential Manager window, click on "Windows Credentials."
 
 2. **Add a New Credential:**
-   - Click on the "Add a Windows credential" link.
+   - Click on the "Add a generic  credential" link.
 
 ### Step 3: Fill in the Credential Details
 
