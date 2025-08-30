@@ -37,4 +37,5 @@ if (-not (Test-Path $databasePath)) {
 }
 
 # Pass the password to KeePassXC via standard input and open the specified database
+$OutputEncoding = [System.Text.Encoding]::UTF8
 $pass | & $keepassPath --pw-stdin "$databasePath" 

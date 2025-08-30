@@ -25,7 +25,7 @@ To securely store your KeePassXC database password in Windows Credential Manager
    - In the Credential Manager window, click on "Windows Credentials."
 
 2. **Add a New Credential:**
-   - Click on the "Add a generic  credential" link.
+   - Click on the "Add a generic credential" link.
 
 ### Step 3: Fill in the Credential Details
 
@@ -95,3 +95,12 @@ To ensure that the install script runs without being blocked by PowerShell's exe
 ```powershell
 powershell -ExecutionPolicy Bypass -File ".\install.ps1"
 ```
+
+### Manual Execution (When Auto-Start Fails) / Troubleshooting
+
+In cases where the automatic startup of the KeePassXC auto-unlock script fails, you can manually trigger it using the `Run-KeePassXC-AutoUnlock.bat` file. This batch file is designed to execute the PowerShell script `keePassXC-AutoUnlock-Login-Windows.ps1` with the necessary execution policy bypass.
+
+To use it:
+
+1. Navigate to the directory where you have cloned this repository.
+2. Double-click `Run-KeePassXC-AutoUnlock.bat`.
