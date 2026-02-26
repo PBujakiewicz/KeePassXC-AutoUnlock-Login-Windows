@@ -89,18 +89,18 @@ Before executing the `install.ps1` script, you need to ensure that the following
    - Make sure to adjust this path if your database is located elsewhere.
 
 3. **$keyFilePath** (optional)
-   - If your database uses an additional key file, set this variable to the full path of that key file. For example:
+   - If your database uses an additional key file, set this variable to the full path of that key file:
      ```powershell
      $keyFilePath = "G:\Mój dysk\KeePass\Keyfile.key"
      ```
    - Leave this variable empty if you do not use a key file.
 
 4. **$yubiKeySlot** (optional)
-   - If your database is protected with a physical key like a YubiKey (challenge-response), set this variable to the appropriate slot or slot with serial number, for example:
+   - If your database is protected with a physical key like a YubiKey (challenge-response), set this variable to the appropriate slot or slot with serial number:
      ```powershell
-     $yubiKeySlot = "2"        # use slot 2
+     $yubiKeySlot = "2"
      # or
-     $yubiKeySlot = "2:1234567"  # use slot 2 with specific YubiKey serial
+     $yubiKeySlot = "2:1234567"
      ```
    - Leave this variable empty if you do not use a physical key.
 
